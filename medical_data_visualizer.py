@@ -5,12 +5,13 @@ import numpy as np
 
 # 1
 df = pd.read_csv('medical_examination.csv')
-
 # 2
 df['overweight'] = 0
-
 # 3
-
+df['gluc'] = df['gluc'].replace(1,0)
+df['gluc'] = df['gluc'].replace([2,3], 1)
+df['cholesterol'] = df['cholesterol'].replace(1,0)
+df['cholesterol'] = df['cholesterol'].replace([2,3],1)
 
 # 4
 def draw_cat_plot():

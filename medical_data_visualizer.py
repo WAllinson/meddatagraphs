@@ -17,8 +17,6 @@ df['cholesterol'] = df['cholesterol'].replace([2,3],1)
 def draw_cat_plot():
     # 5
     df_cat = None
-
-
     # 6
     df_cat = None
     
